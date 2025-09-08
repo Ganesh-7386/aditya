@@ -1,0 +1,464 @@
+What are Comments in HTML?
+
+Comments in HTML are used to add notes, explanations, or reminders inside the code.
+
+They are ignored by the browser (not displayed on the webpage).
+
+Useful for:
+
+Explaining code for future reference.
+Temporarily disabling parts of code (debugging).
+Making the structure of the document more readable.
+
+Anything written between <!-- and --> is treated as a comment.
+
+example:- 
+
+single line comment:- 
+<!-- This is a comment -->
+
+mutliline comment:- 
+<!--
+This is a multi-line comment.
+It can be used to explain large sections of code.
+-->
+<p>This is a paragraph visible to users.</p>
+
+
+
+
+
+2. HTML Elements:-
+
+An HTML element is everything from the start tag to the end tag, including the content in between.
+
+Structure of an Element:
+
+<start-tag> Content </end-tag>
+
+Example:- <p>Hello World!</p>
+<p> = start tag
+Hello World! = content
+</p> = end tag
+Together → one HTML element.
+
+Types of HTML Elements
+
+1. Empty Elements (Self-closing)
+
+Elements that don’t have content or closing tags.
+
+Example:-
+<br>   <!-- Line break -->
+<hr>   <!-- Horizontal line -->
+<img src="image.jpg" alt="Sample Image"> <!-- Image -->
+
+2. Block-level Elements
+
+Always start on a new line.
+
+Take up the full width available.
+
+Examples: <div>, <h1> to <h6>, <p>, <section>, <article>, <footer>.
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<div>This is a block-level container.</div>
+
+3. Inline Elements
+
+Do not start on a new line.
+
+Only take up as much width as needed.
+
+Examples: <span>, <a>, <b>, <i>, <img>, <strong>, <em>.
+<p>This is a <b>bold</b> word and this is an <i>italic</i> word.</p>
+<a href="https://example.com">This is a link</a>
+
+4. Nested Elements
+
+Elements placed inside other elements.
+
+Example: <p>This is a <strong>nested</strong> element.</p>
+
+
+example program:-
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Elements Example</title>
+</head>
+<body>
+
+  <!-- Heading Element -->
+  <h1>Welcome to My Website</h1>
+
+  <!-- Paragraph Element -->
+  <p>This is a paragraph about my website.</p>
+
+  <!-- Anchor (Link) Element -->
+  <a href="https://www.google.com">Visit Google</a>
+
+  <!-- Image Element -->
+  <img src="image.jpg" alt="Sample Image" width="200">
+
+  <!-- Horizontal Line -->
+  <hr>
+
+  <!-- List Elements -->
+  <h3>Shopping List:</h3>
+  <ul>
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Oranges</li>
+  </ul>
+
+</body>
+</html>
+
+in this
+Element = Start tag + Content + End tag.
+Block-level → new line (e.g., <p>, <div>).
+Inline → same line (e.g., <span>, <a>).
+Empty elements → no content (e.g., <br>, <img>).
+
+
+
+
+3. Should describe web page content accurately
+
+this is about writing semantic, well-structured HTML that clearly explains what each part of the webpage means.
+ Reasons to do HTML Describe Content Accurately?
+
+Makes the page understandable to browsers, search engines, and screen readers.
+Helps with SEO (Search Engine Optimization).
+Improves accessibility for visually impaired users.
+Makes the code easier to read and maintain.
+
+
+
+
+4.content model categories:-
+
+In HTML5, every element belongs to one or more content categories. These categories define what type of content an element can contain and how it can be used.
+Types are as follows:
+
+1. Metadata Content
+
+Provides information about the document (not displayed directly).
+Defines styles, scripts, and settings.
+Examples: <base>, <link>, <meta>, <noscript>, <script>, <style>, <title>
+example code:
+<head>
+  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A sample website">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+2. Flow Content
+
+The broadest category → most elements fall here.
+Elements that can appear inside the body of a document.
+Includes headings, sections, paragraphs, links, images, forms, etc.
+Examples: <div>, <p>, <a>, <img>, <ul>, <form>, <section>
+
+Code Example:
+<body>
+  <h1>Welcome</h1>
+  <p>This is flow content inside the body.</p>
+  <a href="#">Read more</a>
+</body>
+
+
+
+3. Sectioning Content
+
+Defines sections of a document with their own headings.
+Helps in structuring a webpage outline.
+Examples: <article>, <aside>, <nav>, <section>
+
+example code:-
+<section>
+  <h2>News Section</h2>
+  <p>Latest updates about technology...</p>
+</section>
+
+
+4. Heading Content
+
+Defines headings and subheadings.
+Examples: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hgroup>
+example code:
+<h1>Main Title</h1>
+<h2>Subtitle</h2>
+
+
+5. Phrasing Content
+
+Refers to text-level elements (phrases, words, inline text).
+Examples: <span>, <strong>, <em>, <a>, <abbr>, <img>, <label>, <small>
+example code:
+<p>This is <strong>important</strong> and <em>highlighted</em> text.</p>
+
+
+
+
+5. Block level elements
+
+Always start on a new line.
+Take up the full width available.
+Examples: <div>, <h1> to <h6>, <p>, <section>, <article>, <footer>.
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+<div>This is a block-level container.</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block Elements Example</title>
+</head>
+<body>
+
+  <!-- Heading (block element) -->
+  <h1>This is a Heading</h1>
+  <h2>This is a Subheading</h2>
+
+  <!-- Paragraph (block element) -->
+  <p>
+    This is a paragraph. 
+    Notice how it starts on a new line and takes up the full width.
+  </p>
+
+  <!-- Div (block container) -->
+  <div style="background-color: lightblue; padding: 10px;">
+    <p>This paragraph is inside a DIV block.</p>
+    <p>Div can hold multiple block or inline elements.</p>
+  </div>
+
+  <!-- List (block elements) -->
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ul>
+
+  <!-- Section (block element) -->
+  <section style="border: 1px solid black; padding: 5px;">
+    <h2>News Section</h2>
+    <p>This is a block-level section containing a heading and paragraph.</p>
+  </section>
+
+</body>
+</html>
+
+
+
+6.What is <blockquote>?
+
+The <blockquote> tag is used for long quotations (block-level quotes).
+It is a block element (starts on a new line and takes up the full width).
+Usually indented by browsers to distinguish it from normal text.
+It can have an optional cite attribute to give the source of the quotation.  
+example code:
+<blockquote cite="URL">
+   Quoted text goes here...
+</blockquote>
+
+
+Explanation
+<blockquote> → Defines a long quotation.
+cite attribute → Optionally specifies the source URL of the quote. (Not always shown visually, but useful for accessibility and search engines.)
+Browsers typically indent the text inside <blockquote>.
+
+
+another example with css
+
+<style>
+  blockquote {
+    border-left: 4px solid gray;
+    padding-left: 15px;
+    color: #555;
+    font-style: italic;
+    background-color: #f9f9f9;
+  }
+</style>
+
+<blockquote cite="https://www.brainyquote.com/quotes/mahatma_gandhi_109075">
+  Be the change that you wish to see in the world.
+</blockquote>
+
+
+
+7. white space collapsing
+
+
+In HTML, multiple white spaces (spaces, tabs, newlines) are collapsed into a single space when displayed in the browser.
+
+This means:
+
+Hello World → Hello World (extra spaces ignored).
+Line breaks (Enter/Return) are also treated as a single space.
+
+This behavior is known as white space collapsing.
+
+example:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>White Space Collapsing Example</title>
+</head>
+<body>
+
+  <h2>Without Special Handling</h2>
+
+  <p>
+    This     is      an example 
+    of        white space   collapsing.
+  </p>
+</body>
+</html>
+
+
+8.Pre Element:
+
+<pre> stands for Preformatted Text.
+Text inside a <pre> element:
+Preserves spaces, tabs, and line breaks exactly as written in the HTML code.
+Uses a monospaced font (like Courier) by default.
+
+Useful for displaying:
+
+Code snippets
+Poetry
+ASCII art
+Any text where spacing/formatting matters
+
+example code:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The pre element</h1>
+
+<pre>
+with pre tag
+<u>rno</u> <u>name</U>    <u>marks</u>   <u>grade</u>
+1   ganesh  0       fail
+2   naveen  90      A+
+3   teja    70      B
+4   purna   80      A
+
+</pre>
+<hr>
+
+<p>without Pre tag</p>
+<u>rno</u> <u>name</U>    <u>marks</u>   <u>grade</u>
+1   ganesh  0       fail
+2   naveen  90      A+
+3   teja    70      B
+4   purna   80      A
+
+</body>
+</html>
+
+
+
+9.Phrasing Elements
+
+Phrasing elements are the text-level elements in HTML.
+They define the markup within a sentence or paragraph.
+They represent the smallest units of content like words, images, links, emphasis, etc.
+Typically, they can only contain phrasing content (not block-level elements like <div> or <section>).
+
+Common Phrasing Elements
+
+Here are some widely used phrasing elements:
+
+Text-level semantics:
+
+<span> → Generic inline container
+<em> → Emphasis (italic by default)
+<strong> → Strong importance (bold by default)
+<b> → Bold (without importance)
+<i> → Italic (without importance)
+<mark> → Highlighted text
+<small> → Smaller text
+<sup> / <sub> → Superscript / Subscript
+
+Interactive & references:
+
+<a> → Hyperlink
+<abbr> → Abbreviation
+<cite> → Citation
+<time> → Date/Time
+
+Media & inline content:
+
+<img> → Inline image
+<br> → Line break
+
+sample code:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phrasing Elements Example</title>
+</head>
+<body>
+
+  <p>
+    This is <strong>important</strong> text and this is 
+    <em>emphasized</em> text.
+  </p>
+
+  <p>
+    You can also <mark>highlight</mark> something or use
+    <small>small print</small>.
+  </p>
+
+  <p>
+    Water formula is H<sub>2</sub>O and E = mc<sup>2</sup>.
+  </p>
+
+  <p>
+    Inline code: <code>console.log("Hello World");</code>
+  </p>
+
+  <p>
+    Visit <a href="https://www.example.com">Example Website</a>.
+  </p>
+
+  <p>
+    Here is an abbreviation: <abbr title="World Health Organization">WHO</abbr>.
+  </p>
+
+  <p>
+    Current time: <time datetime="2025-08-22T13:00">1:00 PM, Aug 22 2025</time>.
+  </p>
+
+  <p>
+    Inline image: <img src="https://via.placeholder.com/50" alt="Sample image">
+  </p>
+
+</body>
+</html>
+
+
+Explanation:
+
+<strong> & <em> → Add semantic importance (screen readers emphasize them).
+<mark> & <small> → Highlight or show small-print text.
+<sub> & <sup> → Used in formulas, footnotes, math/science notation.
+<code> → Displays inline code in monospaced font.
+<a> → Creates a clickable hyperlink.
+<abbr> → Expands abbreviations with a tooltip.
+<time> → Represents machine-readable time/date.
+<img> → Displays an inline image inside text.
