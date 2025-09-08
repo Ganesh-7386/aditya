@@ -2,7 +2,7 @@ What are Comments in HTML?
 
 Comments in HTML are used to add notes, explanations, or reminders inside the code.
 
-They are ignored by the browser (not displayed on the webpage).
+They are ignored by the browser
 
 Useful for:
 
@@ -462,3 +462,4 @@ Explanation:
 <abbr> → Expands abbreviations with a tooltip.
 <time> → Represents machine-readable time/date.
 <img> → Displays an inline image inside text.
+
